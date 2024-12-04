@@ -1,0 +1,6 @@
+- https://kurteyki.com/belajar-kode-blogger/content/80#bmessage_bparam
+- https://dte.web.id/teknis/custom-blogger-widget
+- https://support.google.com/blogger/answer/46995?hl=en&ref_topic=6321969#zippy=%2Cswitches-bswitch%2Cevaluated-expressions-beval
+- https://stackoverflow.com/questions/60607197/how-to-check-if-a-blogger-post-has-specific-label-when-the-label-is-hidden
+- https://bloggerbasics101.blogspot.com/2018/11/blogger-bwith-tag.html?m=1
+- https://kurteyki.com/belajar-kode-blogger/content/87
