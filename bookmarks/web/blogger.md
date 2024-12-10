@@ -1,6 +1,12 @@
-- https://kurteyki.com/belajar-kode-blogger/content/80#bmessage_bparam
-- https://dte.web.id/teknis/custom-blogger-widget
-- https://support.google.com/blogger/answer/46995?hl=en&ref_topic=6321969#zippy=%2Cswitches-bswitch%2Cevaluated-expressions-beval
-- https://stackoverflow.com/questions/60607197/how-to-check-if-a-blogger-post-has-specific-label-when-the-label-is-hidden
-- https://bloggerbasics101.blogspot.com/2018/11/blogger-bwith-tag.html?m=1
-- https://kurteyki.com/belajar-kode-blogger/content/87
+- [statement/konditional](https://www.igniel.com/2017/12/tag-kondisional-blogger-terbaru.html?m=1)
+- [example tag](https://kurteyki.com/belajar-kode-blogger/content/80#bmessage_bparam)
+- [berelated post (belum coba)](https://www.bungfrangki.com/2018/07/cara-pasang-related-posts-responsive.html?m=1)
+- [custom widget json](https://dte.web.id/teknis/custom-blogger-widget)
+- [docs widget tag](https://support.google.com/blogger/answer/46995?hl=en#zippy=)
+- [if label have](https://stackoverflow.com/questions/60607197/how-to-check-if-a-blogger-post-has-specific-label-when-the-label-is-hidden)
+- [complete example](https://stackoverflow.com/questions/60607197/how-to-check-if-a-blogger-post-has-specific-label-when-the-label-is-hidden)
+- [operator](https://kurteyki.com/belajar-kode-blogger/content/87)
+- [function](https://kurteyki.com/belajar-kode-blogger/content/82)
+- [use object/array in value](https://www.google.com/amp/s/triksonic.blogspot.com/2018/05/tag-b-with-blogger-tutorial.html%3famp=1) :
+  - setelah `:` harus ada white space
+  - tidak boleh ada `"` quote di key name
