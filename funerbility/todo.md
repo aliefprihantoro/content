@@ -1,0 +1,15 @@
+check this :
+- web :
+  - [ ] xss
+  - [ ] html injection
+  - [ ] ddos
+  - [ ] race condition
+  - [ ] auth
+    - [ ] cookies
+  - [ ] form
+  - [ ] cancel transaction, but money/foo keep increase
+- [ ] personal :
+  - [ ] man in middle attact
+  - [ ] vpn (for tracker)
+  - [ ] phising
+    - [ ] check link

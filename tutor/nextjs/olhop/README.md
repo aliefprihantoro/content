@@ -12,6 +12,7 @@
 - eslint
 - typescript
 - prettier
+- zood
 
 ### GOAL
 
@@ -40,11 +41,11 @@
   - user req bersamaan
 - time out :
   - req usr diproses lama
+- lcp
 
 ### TODO
 
 #### Setup
-
 - next js
 - eslint
 - prettier
@@ -52,16 +53,99 @@
 - firebase
 - supabase
 - storybook
+- ci :
+  - storybook
+  - eslint
+
+#### siapkan assets
+- logo
+- icon
+- favicon :
+  - https://favicon.io/favicon-converter/
+- product
+- profile
+
+> sprint ini dilakukan max 1 minggu, kasih tanggal mulai mengerjakan dan selesai kapan.
+
+#### sprint1 (user/auth)
+- client :
+  - login
+  - register
+  - detail profile edit
+  - register popup
+- server(auth) :
+  - setup firebase
+  - auth with firebase
+  - crud user detail
+  - input types use zood
+- test :
+  - input crud
+  - lint
+  - types
+  - client test
+  - wcag pass
+- docs :
+  - storybook args
+- refactor(optional)
+
+#### sprint2 (client/home)
+- client :
+  - nav
+  - footer
+  - list product :
+    - card
+    - list
+  - heroes
+  - promo
+  - brand/kerja sama dengan
+- server :
+  - get public data from db
+- docs :
+  - args storybook
+- refactor(optional)
+
+#### sprint 3 (admin/product)
+- client:
+  - list product
+  - detail product
+- server:
+  - crud product
+- test:
+  - check crud
+- docs:
+  - args
+
+
+
 
 #### FRONT END
 
+##### ci
+- storybook
+- linter
+
+##### ui
 - home
 - login/register/reset password
 - user detail
 - keranjang
 - payment
 - status pesanan
--
+
+##### QA
+
+- lcp :
+  - load firstbimage
+  - have skeleton
+  - onload :
+    - font
+    - scripts (if not used in first)
+- wcag :
+  - dont use link in button tag
+  - link(title/name)
+  - img (alt/title/tabindex)
+  - tabindex
+  - color blind
 
 #### BACK END
 
@@ -71,13 +155,11 @@
 - payment
 - status pesanan
 
-#### QA
+##### QA
+- linter
+- type check
 
-- wcag :
-  - link
-  - img
-  - tabindex
-  - color blind
+#### TEST
 - integration test :
   - login berhasil dan gagal
   - register belum ada usr dan sudah ada

@@ -11,6 +11,7 @@
   - https://render.com/pricing#compute
   - https://cloudinary.com/developers
   - php : https://www.infinityfree.com/#google_vignette
+  - https://www.oracle.com/id/cloud/free/
 - auth :
   - https://lucia-auth.com/
   - https://kinde.com/pricing/?utm_source=google&utm_medium=search&utm_campaign=ggl18oct23&utm_term=alternatives
