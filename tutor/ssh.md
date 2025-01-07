@@ -9,3 +9,4 @@
 3. in server :
   1. edit in `/etc/ssh/sshd_config` or `~/../usr/etc/ssh/sshd_config`
   2. change/add this config `PasswordAuthentication no`
+  3. reload sshd
