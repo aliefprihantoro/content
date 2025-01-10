@@ -46,8 +46,8 @@ chsh -s zsh          # set default to zsh
 ```bash
 mkdir ~/../usr-n
 cd ~/../usr-n
-mv /path/fileName.zip ./
-unzip fileName.zip
+mv /path/<filename>.zip ./
+unzip <filename>.zip
 cat SYMLINKS.txt | awk -F "←" '{system("ln -s '"'"'"$1"'"'"' '"'"'"$2"'"'"'")}'
 ```
 
@@ -76,5 +76,10 @@ pacman-key --populate
 
 ```bash
 git clone --depth=1 https://github.com/alifprihantoro/dotconf ~/.myconf
-bash .myconf/termuxInstall.sh
+ln -s $HOME/.myconf/home/.* $HOME
+mkdir .config
+ln -s $HOME/.myconf/.config/* $HOME/.config/
 ```
+
+## install app
+see [here](./app.md)

@@ -32,6 +32,7 @@ apt install openbox lxappearance -y
 - example my theme is [ojave](https://store.kde.org/p/1275087/)
 - to decompress themes is `tar -xv /path/to/file.tar.xz ~/.themes`
 - type `lxappearance` then change themes on that gui
+- for cursor in `/usr/share/icons/`
 
 #### font
 

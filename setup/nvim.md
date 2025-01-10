@@ -101,29 +101,44 @@ rm -rf lib/nvim share/nvim bin/nvim lib/lua/5.1/lpeg.so share/lua/5.1/re.lua sha
 ## Setup configs
 
 Jika kalian membuka neovim pertamakali, pasti kalian kaget dengan tampilannya. Agar lebih cantik dan lebih produktif menggunakan termux, kalian bisa clone configurasi saya.
-
-> [!WARNING]
-> ganti pnpm ke npm atau yarn jika kalian tidak menggunaksn pnpm.
-> hapus lsp/formatter yang tidak kalian butuhkan.
-
-```bash
+### install with my conf
+```sh
 mv ~/.config/nvim/ ~/.config/nvim.bak
 git clone --depth 1 https://github.com/alifprihantoro/conf.nvim ~/.config/nvim
+```
+### install lsp
+> [!IMPORTANT]
+> ganti pnpm ke npm atau yarn jika kalian tidak menggunaksn pnpm.
+> jika kamu tidak pakai termux silahkan ganti `pkg` menjadi package bawaan/bisa gunakan [mason](https://github.com/williamboman/mason.nvim)
+> tutorial ini berfokus untuk termux yang mana tidak bisa memakai mason untuk instalasi
+> hapus lsp/formatter yang tidak kalian butuhkan.
+
+<!-- TODO: create mason registery, here for info : https://github.com/mason-org/mason-registry/blob/main/CONTRIBUTING.md#github-build-from-source -->
+```sh
 # setup neovim
 pkg install luarocks luajit
 luarocks install luacheck
-# install lsp
-pnpm i -g vscode-langservers-extracted # html,css,json, eslint
-pnpm i -g typescript                   # typescript compiler
-pnpm i -g typescript-language-server   # lsp js/ts/tsx
-pnpm i -g cssmodules-language-server   # css module lsp
-pnpm i -g @astrojs/language-server     # astrojs lsp
-pnpm i -g yaml-language-server         # yaml lsp
-pnpm i -g bash-language-server         # bash lsp
+# html,css,json, eslint
+pnpm i -g vscode-langservers-extracted
+# typescript compiler
+pnpm i -g typescript                  
+# lsp js/ts/tsx
+pnpm i -g typescript-language-server  
+# css module lsp
+pnpm i -g cssmodules-language-server  
+# astrojs lsp
+pnpm i -g @astrojs/language-server    
+# yaml lsp
+pnpm i -g yaml-language-server        
+# bash lsp
+pnpm i -g bash-language-server        
 pnpm i -g pyright
-pnpm i -g @tailwindcss/language-server # tailwind lsp
-pnpm i -g @mdx-js/language-server      # mdx lsp
-pkg install lua-language-server -y     # lsp lua
+# tailwind lsp
+pnpm i -g @tailwindcss/language-server
+# mdx lsp
+pnpm i -g @mdx-js/language-server     
+# lsp lua
+pkg install lua-language-server -y    
 # lsp rust
 git clone --depth=1 https://github.com/rust-lang/rust-analyzer.git
 cd rust-analyzer
@@ -154,22 +169,5 @@ go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 mv ~/go/bin/golangci-lint ~/../usr/bin/
 ```
 
-### setup codeium
-
-<!--TODO: ganti configs aja untuk path bin -->
-
-hapus file `language_server_linux_arm` di folder `~/.codeium/bin/98dd1530ef0dce8888caa538e96fe193a7956819/` (jika random file lebih dari 1 maka hapus semua dulu), lalu buat file yang sama lalu paste code berikut :
-
-> [!WARNING]
-> mungkin nama folder akan berubah jika kita melakukan update. lakukan cara seperti ini, jika folder name berubah
-
-```bash
-#!/data/data/com.termux/files/usr/bin/bash
-
-proot-distro login debian -- /root/.codeium/bin/<path>/language_server_linux_arm $@
-```
-
-> [!NOTE]
-> ganti sesuai proot distro kalian, dan `<path>` diganti sesuai path kalian masing-masing
-
 Bagaimana, mulai tertarik? tulis di kolom komentar dibawah jika kalian rasa ada yang ingin kalian tahu. see you next time.
+
