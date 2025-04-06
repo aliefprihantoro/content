@@ -1,0 +1,6 @@
+- dot env in web server
+- dont make `debugger_app=true`
+- sql injection
+- csrf form
+- dont use html for user(maybe have script injection)
+- escape function (sanitize)

@@ -13,6 +13,7 @@ rm ~/../usr/etc/motd
 
 ```sh
 echo "tmux attach \; send-keys tmuxl C-m" >~/../usr/etc/termux-login.sh
+echo "dr=\$HOME\ndc=\$dr/.myconf" >~/../usr/etc/profile
 ```
 
 - custom keyboard goto [here](https://wiki.termux.com/wiki/Touch_Keyboard)

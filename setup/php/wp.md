@@ -114,3 +114,9 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 ```
+
+## security
+- ubah `/wp-admin`
+- versi plugin dan wp up to date
+- restrict ip
+- hide version wp

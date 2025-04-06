@@ -11,6 +11,7 @@ pd login debian
 ## open debian and install some packages
 ```sh
 ln -s /data/data/com.termux/files/home/.myconf/ $HOME
+ln -s $HOME/.myconf/zsh/proot/.* $HOME
 ln -s $HOME/.myconf/home/.* $HOME
 mkdir .config
 ln -s $HOME/.myconf/.config/* $HOME/.config/
@@ -22,35 +23,6 @@ ln -s $HOME/.myconf/.config/* $HOME/.config/
 > update file `/etc/pam.d/chsh`, change be `auth       sufficient   pam_shells.so`
 ```sh
 apt-get install zsh
-cat >~/.zshrc <<EOF
-export dr=/data/data/com.termux/files/home
-export dc=\$dr/.myconf
-sta() {
-  rm -r .vnc/:*
-  rm -r .vnc/loc*
-  rm -r /tmp/.*
-  vncserver -geometry 1640x720
-}
-staf() {
-  local OPTION_USER=\$(echo "i3\nopenbox --startup \$HOME/.config/openbox/autostart\nawesome" | fzf)
-  if [ ! -z \$OPTION_USER ]; then
-    rm -r .vnc/:*
-    rm -r .vnc/loc*
-    rm -r /tmp/.*
-    echo \$OPTION_USER >\$HOME/.vnc/xstartup
-    vncserver -geometry 1640x720
-  fi
-}
-alias sto='
-vncserver -kill :1
-'
-stoo() {
-  vncserver -kill :\$1
-}
-source \$dc/home/.zshrc
-export PATH=\$PATH:\$HOME/.myconf/bin/
-EOF
-chmod +x ~/.zshrc
 ```
 ## setup window manager
 > install 

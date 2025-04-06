@@ -1,0 +1,2 @@
+- heap dump = melihat memory leak
+- global variable susah dihapus oleh garbage collector

@@ -157,7 +157,7 @@ mv ~/go/bin/gopls ~/../usr/bin/
 # install formatter
 pkg install stylua -y # lua
 pkg install shfmt -y  # bash
-pnpm i -g prettierd   # formatter
+pnpm i -g @fsouza/prettierd  # formatter
 echo '#!/bin/sh\necho "$(cat $1 | $PNPM_HOME/prettierd $1)"' >~/../usr/bin/astrofm
 chmod +x ~/../usr/bin/astrofm
 

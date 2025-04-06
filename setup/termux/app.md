@@ -11,7 +11,7 @@ pkg install openssh -y
 # install glibc
 pacman -S glibc-runner
 # install db
-pkg install postgresql mariadb -y
+pkg install postgresql mariadb mongodb -y
 # install language and related tools
 pkg install nodejs esbuild golang rust php composer python python-pip -y
 # use main because latest ver. have bug for pnpm
