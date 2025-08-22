@@ -1,0 +1,56 @@
+- perencanaan :
+  - how much pages/list pages
+  - what tech
+  - color/font
+- setup :
+  - git
+  - npm
+  - tech :
+    - front end framework (react)
+    - back end framework (astrojs,firebase)
+    - style(tailwindcss,daisyui)
+    - testing (vitest)
+    - statemanagement(zustand)
+- ui/ux :
+  - navigation
+  - login
+  - register
+  - user setting
+  - forgot password
+  - dashboard
+- front end :
+  - navigation
+  - user :
+    - login :
+      - check auth from login
+      - save user data in localstorage with zustand
+      - redirect to home
+    - logout :
+      - remove user data in localstorage with zustand
+      - delete jwt/token from localstorage
+      - redirect to login
+    - checkIsLogin :
+      - check jwt/token in localstorage
+      - if jwt/token exist, like login
+      - if jwt/token not exist, like logout
+    - register :
+      - check email format
+      - check password strength
+      - add user data to firebase
+      - save user data to localstorage
+      - redirect to home
+    - forgot password
+    - user setting
+- backend :
+  - firebase :
+    - db rules
+    - auth rules :
+      - batasi login berulang
+      - batasi register berulang
+  - user :
+    - login
+    - logout
+    - register
+    - checkIsLogin
+    - forgot password
+    - user setting
